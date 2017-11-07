@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="home">
+                <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home
+                </a>
+            </div>
+            <div class="notifications">
+                <a href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></i> Notifications</a>
+            </div>
+            <div class="message">
+                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Messages</a>
+            </div>
+
+
+
+        </div>
+        <h1>
+            <i class="fa fa-twitter" aria-hidden="true"></i>        </h1>
+        <div class="settings">
+            <div class="search">
+                <input type="text" name="search" placeholder="Search Twitter">
+                <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            </div>
+            <div class="profile">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+            <a href="#">Twitter</a>
+        </div>
+    </header>
+    <section>
+        <div class="left">
+            <div class="userInfo">
+                <img src="assets/img/profile.png" alt="">
+            </div>
+        </div>
+        <div class="center">
+            <form>
+                <textarea  id= "textInput" name="message" placeholder="What's Happening?" onkeydown="limitText(this.form.message,this.form.countdown,140);" onkeyup='limitText(this.form.message,this.form.countdown,140);'>
+                </textarea>
+                <input id="send" type="button" name="enviar" onclick="twit(field)" value="Enviar">
+                <input readonly type="text" name="countdown" size="3" value="140">
+            </form>
+            <div name="lineaDeTiempo">
+            </div>
+        </div>
+        <div class="right">
+            <div class="follow">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="assets/js/app.js" charset="UTF-8"></script>
+</body>
+
+</html>

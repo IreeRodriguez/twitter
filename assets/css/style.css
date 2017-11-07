@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #E6ECF0;
+}
+header{
+    background-color: white;
+    display: flex;
+    padding: 0 1em 0;
+    border-bottom: 2px solid lightgray;
+}
+header>*{
+    flex: 1 70%;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 0 1em 0;
+}
+.menu div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    line-height: 100%;
+}
+.menu div a{
+    display: block;
+    margin: 0;
+    color: gray;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+.menu div:hover>a{
+    color: #1DA1F2;
+
+}
+.menu div:hover{
+    border-bottom: 2px solid #1DA1F2;
+}
+
+.settings{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 0.3em;
+    color:#1DA1F2;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 1em 1em;
+}
+.left .right{
+    flex: 1 40%;
+    display: flex;
+    flex-flow: column;
+}
+.center{
+    flex: 2 70%;
+}
+#textInput{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.tuit {
+    border: 2px solid deeppink;
+}
