@@ -19,7 +19,6 @@
             </div>
 
 
-
         </div>
         <h1>
             <i class="fa fa-twitter" aria-hidden="true"></i>        </h1>
@@ -39,25 +38,24 @@
             <div class="userInfo">
                 <img src="assets/img/profile.png" alt="">
             </div>
+            <div class="">
+                <h2>Retos de Codigo</h2>
+                <p>Hola, bienvenidos a mi twitter</p>
+
+            </div>
         </div>
         <div class="center">
             <form>
                 <textarea  id= "textInput" name="message" placeholder="What's Happening?" onkeydown="limitText(this.form.message,this.form.countdown,140);" onkeyup='limitText(this.form.message,this.form.countdown,140);'>
                 </textarea>
                 <input id="send" type="button" name="enviar" onclick="twit(field)" value="Enviar">
-                <input readonly type="text" name="countdown" size="3" value="140">
+                <input class="count" readonly type="text" name="countdown" size="3" value="140">
             </form>
-            <div name="lineaDeTiempo">
-            </div>
         </div>
-        <div class="right">
-            <div class="follow">
-
-            </div>
-
-        </div>
-
     </section>
+    <div class="twits" name="lineaDeTiempo">
+
+    </div>
 
     <script src="assets/js/app.js" charset="UTF-8"></script>
 </body>
