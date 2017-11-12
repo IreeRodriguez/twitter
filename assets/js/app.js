@@ -5,11 +5,21 @@ var limitText = function (limitField, limitCount, limitNum) {
 
     var textA = document.getElementsByName("message")[0];
 
+    var count = document.getElementsByName("countdown")[0];
 
     limitCount.value = limitNum - limitField.value.length;
     field = limitField.value.length;
+
     textA.style.height = "25px";
     textA.style.height = (20+textA.scrollHeight)+"px";
+
+    if(limitCount.value<=20 && limitCount.value>10){
+        count.style.color="orange";
+    } else if (limitCount.value<=10) {
+        count.style.color="red";
+    } else {
+        count.style.color="#1DA1F2";
+    }
 };
 
 var twit = function (fieldValue) {
@@ -19,6 +29,7 @@ var twit = function (fieldValue) {
         var sendButton = document.getElementsByName("enviar")[0];
         var thinkInput = document.getElementsByName("message")[0];
         var timeLine = document.getElementsByName("lineaDeTiempo")[0];
+
 
 
         // sendButton.onclick = function() {
@@ -40,6 +51,7 @@ var twit = function (fieldValue) {
             document.getElementById("textInput").value="";
             field=0;
             document.getElementsByName("countdown")[0].value="140";
+            document.getElementsByName("countdown")[0].style.color="#1DA1F2";
 
         } else {
             return false;
